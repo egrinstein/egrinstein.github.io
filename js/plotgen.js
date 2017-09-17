@@ -17,6 +17,9 @@ $(document).ready( function(){
               type:'GET',
               success: function(data){
                     $('code#plotgen').html(data["text"]);
+              },
+              error: function(data){
+                    $('code#plotgen').html("Failed to fetch plot.");
               }
           });
     });
