@@ -10,9 +10,9 @@ This was a little pet project to sharpen my Django and my Heroku skills, and pla
 
 
 
-
+<div>
 <code id="plotgen">Loading...</code>
 <button id="plotgen" type="button">New plot</button>
+</div>
 
-(If it doesn't work, you can view the result directly through http://plot-generator.herokuapp.com/)
-
+Since I migrated to a different layout, the button does not work anymore. You can view the result directly through [here](http://plot-generator.herokuapp.com/).
