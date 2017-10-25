@@ -1,0 +1,107 @@
+---
+layout: post
+title: Towards Audio Style Transfer
+mathjax: true
+author: Eric Grinstein
+excerpt_separator: <!--more-->
+---
+
+
+
+This page contains the results supporting the article "NAME OF THE ARTICLE", done as product of my stay at Technicolor, under supervision of Alexey Ozerov, Ngoc Duong and Patrick Perez. 
+
+The main purpose of this page is to provide a means of hearing the results, which we feel to be essential to the understanding of our work.
+
+
+
+
+
+<!-- BEGIN TABLE CONTAINING RESULTS -->
+
+<table width="100%" style="border: 1px solid black">
+  <tbody>
+    <tr>
+      <td rowspan="2">Method
+      </td>
+
+      <td colspan="2">Content 1 - Music 
+      		<audio class="js-player" src="/assets/ast/original/pachelbel.mp3" controls>
+      		</audio>
+  
+      </td>
+
+      <td colspan="2">Content 2 - Speech
+      		<audio class="js-player" src="/assets/ast/original/man_speaking_english.mp3" controls></audio>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Style 1: Texture 1
+      	<audio class="js-player" src="/assets/ast/original/cat_milk.mp3" controls></audio>
+      </td>
+
+      <td>Style 2: Speech
+      	<audio class="js-player" src="/assets/ast/original/woman_speaking_french.mp3" controls></audio>
+      </td>
+
+      <td>Style 3: Texture 2
+      	<audio class="js-player" src="/assets/ast/original/crickets.mp3" controls></audio>
+      </td>
+
+      <td>Style 4: Speech
+      	<audio class="js-player" src="/assets/ast/original/woman_speaking_french.mp3" controls></audio>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Texture Synthesizer</td>
+
+      <td><audio class="js-player" src="/assets/ast/music/mcdermott/cat_milk.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/music/mcdermott/man_speaking_english.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/speech/mcdermott/crickets.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/speech/mcdermott/man_speaking_english.mp3" controls></audio></td>
+    </tr>
+
+    <tr>
+      <td>Shallow Net</td>
+
+      <td><audio class="js-player" src="/assets/ast/music/shallow/cat_milk.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/music/shallow/man_speaking_english.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/speech/shallow/crickets.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/speech/shallow/man_speaking_english.mp3" controls></audio></td>
+    </tr>
+
+    <tr>
+      <td>SoundNet</td>
+
+      <td><audio class="js-player" src="/assets/ast/music/soundnet/cat_milk.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/music/soundnet/man_speaking_english.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/speech/soundnet/crickets.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/speech/soundnet/man_speaking_english.mp3" controls></audio></td>
+    </tr>
+
+    <tr>
+      <td>VGG <b>[ATTENTION! NOISY.]</b></td>
+
+      <td><audio class="js-player" src="/assets/ast/music/vgg/cat_milk.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/music/vgg/man_speaking_english.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/speech/vgg/crickets.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/speech/vgg/man_speaking_english.mp3" controls></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!-- END TABLE CONTAINING RESULTS -->

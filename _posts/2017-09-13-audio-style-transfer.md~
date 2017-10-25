@@ -1,0 +1,152 @@
+---
+layout: post
+title: Towards Audio Style Transfer
+mathjax: true
+author: Eric Grinstein
+excerpt_separator: <!--more-->
+---
+
+
+
+This post is a discussion on style transfer on audio signals. It also serves as support for the article "AUDIO STYLE TRANSFER" [LINK TO ARXIV], done as product of my stay at Technicolor, under supervision of Alexey Ozerov, Ngoc Duong and Patrick Pe'rez. 
+
+Style Transfer is defined as the creation of a novel sound from two others, the named "content" and "style". It has been widely explored in image signals since the release of the seminal paper [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576) by Gatys et al.. The quintessential style transfer with images is the one where content refers to a portrait, style refers to a painting. The resulting image preserves the low frequency structures of the image, namely contours, of the content image. Conversely, high frequency details are kept from the style image, yielding an image that looks like the portrait, "painted" in a similar fashion as the style image. The figure below exemplifies the process.
+
+
+![Style Transfer in Images](/assets/ast/alexey.PNG)
+
+The goal of this work is to step forward in adapting the procedure defined by Gatys et al. to audio signals. Unlike the original algorithm for images, we generalize the use of neural networks for any feature extractor. We have explored different neural networks and a feature extractor conceived for texture synthesis, developed by [McDermott et al.](http://mcdermottlab.mit.edu/texture_examples/index.html). Our experiments show that the best results are obtained by initializing the result with the content sound (and not with noise, which is the original algorithm's proposal). The use of a loss function for enforcing content was also deemed unnecessary. 
+
+
+Without further ado, here are two style transfers, obtained with our modifications and using the "Shallow, untrained network":
+
+
+<table width="100%" style="border: 1px solid black">
+  <tbody>
+    <tr>
+      <td rowspan="2">Content - Music 
+      		<audio class="js-player" src="/assets/ast/original/pachelbel.mp3" controls>
+      		</audio>
+  
+      </td>
+
+      <td colspan="2">Style - Bongo
+      		<audio class="js-player" src="/assets/ast/original/bongo-loop.mp3" controls></audio>
+      </td>
+            <td colspan="2">Result
+      		<audio class="js-player" src="/assets/ast/cp/pachelbel_bongo.mp3" controls></audio>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">Style - Applause
+      		<audio class="js-player" src="/assets/ast/original/applause.mp3" controls></audio>
+      </td>
+
+            <td colspan="2">Result 
+      		<audio class="js-player" src="/assets/ast/cp/pachelbel_applause.mp3" controls></audio>
+      </td>
+    </tr>
+
+
+  </tbody>
+</table>
+
+
+In addition, the following table corresponds to the audios of the spectograms presented in the paper. Note that Texture Synthesizer and Shallow Net are the only ones with pleasing results. SoundNet and VGG are included here for completeness. SoundNet's results are unapealling however hearable. VGG's results are almost pure, although some of the content's original sound can be heard.
+
+
+
+<!-- BEGIN TABLE CONTAINING RESULTS -->
+
+<table width="100%" style="border: 1px solid black">
+	  <caption>Audio examples. Refer to [CITE ARTICLE] for more information.</caption>
+  <tbody>
+    <tr>
+      <td rowspan="2">Method
+      </td>
+
+      <td colspan="2">Content 1 - Music 
+      		<audio class="js-player" src="/assets/ast/original/pachelbel.mp3" controls>
+      		</audio>
+  
+      </td>
+
+      <td colspan="2">Content 2 - Speech
+      		<audio class="js-player" src="/assets/ast/original/man_speaking_english.mp3" controls></audio>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Style 1: Texture 1
+      	<audio class="js-player" src="/assets/ast/original/cat_milk.mp3" controls></audio>
+      </td>
+
+      <td>Style 2: Speech
+      	<audio class="js-player" src="/assets/ast/original/woman_speaking_french.mp3" controls></audio>
+      </td>
+
+      <td>Style 3: Texture 2
+      	<audio class="js-player" src="/assets/ast/original/crickets.mp3" controls></audio>
+      </td>
+
+      <td>Style 4: Speech
+      	<audio class="js-player" src="/assets/ast/original/woman_speaking_french.mp3" controls></audio>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Texture Synthesizer</td>
+
+      <td><audio class="js-player" src="/assets/ast/music/mcdermott/cat_milk.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/music/mcdermott/man_speaking_english.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/speech/mcdermott/crickets.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/speech/mcdermott/man_speaking_english.mp3" controls></audio></td>
+    </tr>
+
+    <tr>
+      <td>Shallow Net</td>
+
+      <td><audio class="js-player" src="/assets/ast/music/shallow/cat_milk.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/music/shallow/man_speaking_english.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/speech/shallow/crickets.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/speech/shallow/man_speaking_english.mp3" controls></audio></td>
+    </tr>
+
+    <tr>
+      <td>SoundNet</td>
+
+      <td><audio class="js-player" src="/assets/ast/music/soundnet/cat_milk.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/music/soundnet/man_speaking_english.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/speech/soundnet/crickets.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/speech/soundnet/man_speaking_english.mp3" controls></audio></td>
+    </tr>
+
+    <tr>
+      <td>VGG <b>[ATTENTION! NOISY.]</b></td>
+
+      <td><audio class="js-player" src="/assets/ast/music/vgg/cat_milk.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/music/vgg/man_speaking_english.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/speech/vgg/crickets.mp3" controls></audio></td>
+
+      <td><audio class="js-player" src="/assets/ast/speech/vgg/man_speaking_english.mp3" controls></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+
+As you can see, results vary significantly throughout feature extractors, and it is interesting to compare the Texture Synthesizer and the Shallow Net. Although the features extracted are very dissimilar in nature, they both produce similar results, with the Shallow Net being better at placing style sounds, and the TS in being faithful to the original style texture.
+
+For more results, questions or discussing, please feel free to contact me. The release of the source code is being studied. 
+
+<!-- END TABLE CONTAINING RESULTS -->
