@@ -12,11 +12,11 @@ html, body {
 body {
         max-width: $content-width;
         font-family: $base-font-family;
-        /*margin: 0 auto;*/
+        margin: 0 auto;
         line-height: $base-line-height;
         font-size: $base-font-size;
         color: $text-color;
-        padding: 2em 1em;
+        /*padding: 2em 1em;*/
         text-rendering: optimizeLegibility;
         height: 100%;
     @include media-query($on-palm) {
@@ -30,7 +30,7 @@ body {
          font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
          font-weight: bold;
          line-height: 1.8;
-         /*margin: 0;*/
+         margin: 0;
          text-transform: capitalize;
     }
 
@@ -61,9 +61,9 @@ p a {
 }
 
 
-figure {
+/*figure {
     margin: 0;
-}
+}*/
 
 img {
     max-width: 100%;
