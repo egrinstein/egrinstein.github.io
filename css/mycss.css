@@ -77,3 +77,8 @@ table tr:last-child td:last-child {
 	-webkit-border-bottom-right-radius:3px;
 	border-bottom-right-radius:3px;
 }
+
+.ctable {
+    
+    margin-left: auto;
+    margin-right: auto }
