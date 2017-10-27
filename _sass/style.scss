@@ -12,16 +12,16 @@ html, body {
 body {
         max-width: $content-width;
         font-family: $base-font-family;
-        margin: 0 auto;
+        margin: auto auto;
         line-height: $base-line-height;
         font-size: $base-font-size;
         color: $text-color;
-        /*padding: 2em 1em;*/
+        padding: 2em 1em;
         text-rendering: optimizeLegibility;
         height: 100%;
     @include media-query($on-palm) {
         max-width: 100%;
-        padding: 1em;
+        padding: 0em;
     }
 
     }
