@@ -12,7 +12,7 @@ html, body {
 body {
         max-width: $content-width;
         font-family: $base-font-family;
-        margin: 0 auto;
+        /*margin: 0 auto;*/
         line-height: $base-line-height;
         font-size: $base-font-size;
         color: $text-color;
@@ -30,7 +30,7 @@ body {
          font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
          font-weight: bold;
          line-height: 1.8;
-         margin: 0;
+         /*margin: 0;*/
          text-transform: capitalize;
     }
 
