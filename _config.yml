@@ -12,7 +12,7 @@ markdown: kramdown
 
 
 # Tracker
-analytics: 
+analytics: UA-56100200-1
 
 # Comments
 disqus-shortname: egrinstein
