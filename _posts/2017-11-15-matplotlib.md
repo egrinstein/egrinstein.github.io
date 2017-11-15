@@ -26,7 +26,7 @@ An empty Figure is not even white. It is not even transparent. If you want a sma
 
 This first code example shows the relationship between Figure and Axes. 
 
-{% highlight python %}
+```python
 
 `import matplotlib.pyplot as plt
 
@@ -43,7 +43,7 @@ Fx = [x**2 for x in X]
 ax.plot(X,Fx) # plots happen inside Axes objects
 
 plt.show(fig)
-{% endhighlight %}
+```
 
 ![First example](/images/first-plot.png)
 
@@ -54,7 +54,8 @@ Even though we can dispose the Axes how we want inside the figure,
 we usually do the same configuration over and over, creating equal-sized, 
 equally-spaced rectangular Axes. So there is a shorthand to create a Figure with this kind of display: the $subplots$ function. This one creates a Figure with a set of Axes disposed in a rectangular fashion inside. You dictate the fashion: The first argument dictates how many lines the grid will have, the second the number of columns. The subplot will give you a figure and a matrix of Axes. You access each Axes by its row and column, and fill it with plots, for instance. Let's create a 2x2 subplot, and fill it with different functions:
 
-{% highlight python %}
+```python
+
 import matplotlib.pyplot as plt
 fig,axes = plt.subplots(2,2)
 
@@ -72,8 +73,7 @@ axes[1,1].plot(X,F3)
 
 plt.show(fig)
 
-
-{% endhighlight %}
+```
 
 
 ![Second example](/images/second-plot.png)
@@ -86,7 +86,8 @@ Another useful way to create grids of plots is by creating a figure and then add
 
 This way is better suited for making irregular grid. For example, suppose we want a graph to fill half the Figure and other two to fill the bottom. We would do:
 
-{% highlight python %}
+```python
+
 import matplotlib.pyplot as plt
 
 fig = plt.figure()
@@ -103,7 +104,7 @@ ax4.plot(X,F1)
 
 plt.show(fig)
 
-{% endhighlight %}
+```
 
 ![Third example](/images/third-plot.png)
 
