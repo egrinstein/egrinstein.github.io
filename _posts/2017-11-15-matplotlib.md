@@ -7,10 +7,10 @@ excerpt_separator: <!--more-->
 ---
 
 
-Matplotlib is Python's most used library for scientific visualization. However, there are many ways to use it, and its syntax can be a little misleading. A good starting point is in https://matplotlib.org/faq/usage_faq.html. This post complements the aforementioned link by being a little more hands-on, without becoming an example-based tutorial. This tutorial is aimed at people who use Matplotlib, but are not sure of what they are doing. I am doing this as a reference to myself, to be honest.
+Matplotlib is Python's most used library for scientific visualization. However, there are many ways to use it, and its syntax can be a little misleading. This post tries to be a more formal than the example-based tutorials out there without giving up on some examples. I am doing this as a reference to myself, to be honest.
 
 
-### Figures and \& Axes
+### Figures and & Axes
 
 
 First thing you have to remember is that there are two ways of using Matplotlib, the **global** way and the **local, object oriented** one. The latter is more readable and flexible, while the former is quicker to write. 
@@ -111,3 +111,7 @@ plt.show(fig)
 1. There are many ways of customizing plots, by adding titles, changing objects and lines, changing the axis...Think that this is all done in the graph, that is the Axes, level. Think of adding a title as Adding a mini-Axes of text to your Axes.
 2. If something is badly aligned, if ticks are overlapping, think that subplot Axes overlap, specially when it comes to titles and ticks. using **plt.tight\_layout()** usually solves it.
 3. There are different types of plot, such as scatter plots, heatmaps, polar plots and others. You can easily mix together many kinds of plots in a figure. Again, think in terms of Figures and Axes. Choose an Axes, draw however many plots you want, even one on top of the other, and go to the next one. 
+
+Check these two posts for more detailed information:
+
+[](https://matplotlib.org/faq/usage_faq.html)
