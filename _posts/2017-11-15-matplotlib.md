@@ -114,4 +114,5 @@ plt.show(fig)
 
 Check these two posts for more detailed information:
 
-[](https://matplotlib.org/faq/usage_faq.html)
+* [Official FAQ](https://matplotlib.org/faq/usage_faq.html)
+* [python4astronomers](https://python4astronomers.github.io/plotting/advanced.html)
