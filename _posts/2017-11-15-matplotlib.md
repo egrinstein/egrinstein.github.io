@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Matplotlib -- A Mostly Formal Introduction 
+title: Matplotlib - A Mostly Formal Introduction 
 mathjax: true
 author: Eric Grinstein
 excerpt_separator: <!--more-->
@@ -22,13 +22,13 @@ Figures are the top-level container for drawings. They have a specific size (in 
 
 ## The Plot Function
 
-An empty Figure is not even white. It is not even transparent. If you want a small rectangle around it, you have to create an Axes, and then draw it. If you want to plot a one variable function, you would have to plot every one of its points, and then connect neighbors by small lines. Luckily, there is the $plot$ function, which is perfect for most of our functional needs. You give it your x (inputs) and your f(x) (outputs). It creates a figure with an Axes in it. It  this Axes, it draws everything we need: x ticks, y ticks, a rectangle around it and, of course, the points connected by lines we know and love.
+An empty Figure is not even white. It is not even transparent. If you want a small rectangle around it, you have to create an Axes, and then draw it. If you want to plot a one variable function, you would have to plot every one of its points, and then connect neighbors by small lines. Luckily, there is the **plot** function, which is perfect for most of our functional needs. You give it your x (inputs) and your f(x) (outputs). It creates a figure with an Axes in it. It  this Axes, it draws everything we need: x ticks, y ticks, a rectangle around it and, of course, the points connected by lines we know and love.
 
 This first code example shows the relationship between Figure and Axes. 
 
 ```python
 
-`import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 
 fig = plt.figure()
@@ -36,8 +36,6 @@ ax = fig.add_axes([0., 0., 1., 1., ]) # define a rectangle
 							# It goes from 0 to 1 (100%)
 							# from top to bottom and from 
 							# left to right. 
-
-
 X = [0,1,2,3,4]
 Fx = [x**2 for x in X]   
 ax.plot(X,Fx) # plots happen inside Axes objects
@@ -52,7 +50,7 @@ plt.show(fig)
 
 Even though we can dispose the Axes how we want inside the figure,
 we usually do the same configuration over and over, creating equal-sized, 
-equally-spaced rectangular Axes. So there is a shorthand to create a Figure with this kind of display: the $subplots$ function. This one creates a Figure with a set of Axes disposed in a rectangular fashion inside. You dictate the fashion: The first argument dictates how many lines the grid will have, the second the number of columns. The subplot will give you a figure and a matrix of Axes. You access each Axes by its row and column, and fill it with plots, for instance. Let's create a 2x2 subplot, and fill it with different functions:
+equally-spaced rectangular Axes. So there is a shorthand to create a Figure with this kind of display: the **subplots** function. This one creates a Figure with a set of Axes disposed in a rectangular fashion inside. You dictate the fashion: The first argument dictates how many lines the grid will have, the second the number of columns. The subplot will give you a figure and a matrix of Axes. You access each Axes by its row and column, and fill it with plots, for instance. Let's create a 2x2 subplot, and fill it with different functions:
 
 ```python
 
@@ -111,5 +109,5 @@ plt.show(fig)
 ## Tips and extras
 
 1. There are many ways of customizing plots, by adding titles, changing objects and lines, changing the axis...Think that this is all done in the graph, that is the Axes, level. Think of adding a title as Adding a mini-Axes of text to your Axes.
-2. If something is badly aligned, if ticks are overlapping, think that subplot Axes overlap, specially when it comes to titles and ticks. using $plt.tight\_layout()$ usually solves it.
+2. If something is badly aligned, if ticks are overlapping, think that subplot Axes overlap, specially when it comes to titles and ticks. using **plt.tight\_layout()** usually solves it.
 3. There are different types of plot, such as scatter plots, heatmaps, polar plots and others. You can easily mix together many kinds of plots in a figure. Again, think in terms of Figures and Axes. Choose an Axes, draw however many plots you want, even one on top of the other, and go to the next one. 
