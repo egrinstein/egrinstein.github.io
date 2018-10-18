@@ -11,7 +11,7 @@ My name is Eric Grinstein and I am a computer engineer from Brazil. I have spent
 
 I have created a highly upvoted, downloaded and exploited [dataset](https://www.kaggle.com/egrinstein/20-years-of-games) on Kaggle.
 
-I have a conference article on the very novel topic of "Audio Style Transfer" at ICASSP.
+I have a conference [article](https://arxiv.org/abs/1710.11385) on the very novel topic of "Audio Style Transfer" at ICASSP.
 
 I keep my public software engineering projects at [GitHub](https://github.com/egrinstein).
 
@@ -19,4 +19,4 @@ You can view my detailed work history, as well as my technical skills at [Linked
 
 My e-mail is [eric.grinstein@outlook.com](mailto:eric.grinstein@outlook.com).
 
-You can see my paintings on Instagram through my handle @grinstegram.
+You can see my paintings on Instagram through my handle [@grinstegram](https://www.instagram.com/grinstegram/).
