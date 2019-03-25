@@ -7,16 +7,13 @@ published: true
 
 Welcome,
 
-My name is Eric Grinstein and I am a computer engineer from Brazil. I have spent almost 2.5 years in France, with a summer in the Netherlands in between. I love playing the guitar and I love music. In particular, I cannot stop listening to Mark Knopfler since I was 15.
+My name is Eric Grinstein. I have recently finished a 6 year dual degree programme between Pontifícia Universidade Católica do Rio de Janeiro (Brazil) and IMT-Atlantique (A Grande École in France). I have obtained a Bacharel of Computer Engineering degree from the former and a Master of Engineering (Diplôme d'Ingénieur Généraliste) degree from the latter.
 
-I have created a highly upvoted, downloaded and exploited [dataset](https://www.kaggle.com/egrinstein/20-years-of-games) on Kaggle.
 
-I have a conference [article](https://arxiv.org/abs/1710.11385) on the very novel topic of "Audio Style Transfer" at ICASSP.
+[GitHub](https://github.com/egrinstein)
 
-I keep my public software engineering projects at [GitHub](https://github.com/egrinstein).
+[LinkedIn](https://www.linkedin.com/in/egrinstein)
 
-You can view my detailed work history, as well as my technical skills at [LinkedIn](https://www.linkedin.com/in/egrinstein). You can also see my technical skills there.
+[email](mailto:eric.grinstein@outlook.com).
 
-My e-mail is [eric.grinstein@outlook.com](mailto:eric.grinstein@outlook.com).
-
-You can see my paintings on Instagram through my handle [@grinstegram](https://www.instagram.com/grinstegram/).
+[Scholar](https://scholar.google.com/citations?user=nQV8OB8AAAAJ&hl=en)
