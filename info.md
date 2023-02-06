@@ -13,6 +13,6 @@ I am a Marie Curie Early Stage Researcher at Imperial College London, working on
 
 [LinkedIn](https://www.linkedin.com/in/egrinstein)
 
-[email](mailto:eric.grinstein@outlook.com).
+[email](mailto:eric.grinstein@outlook.com)
 
 [Scholar](https://scholar.google.com/citations?user=nQV8OB8AAAAJ&hl=en)
