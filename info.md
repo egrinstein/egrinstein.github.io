@@ -1,5 +1,5 @@
 ---
-title: Useful Information About Me
+title: About Me
 layout: post
 permalink: /info/
 published: true
@@ -7,8 +7,7 @@ published: true
 
 Welcome,
 
-My name is Eric Grinstein. I have recently finished a 6 year dual degree programme between Pontifícia Universidade Católica do Rio de Janeiro (Brazil) and IMT-Atlantique (A Grande École in France). I have obtained a Bacharel of Computer Engineering degree from the former and a Master of Engineering (Diplôme d'Ingénieur Généraliste) degree from the latter.
-
+I am a Marie Curie Early Stage Researcher at Imperial College London, working on AI applied to audio.
 
 [GitHub](https://github.com/egrinstein)
 
